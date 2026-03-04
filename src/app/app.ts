@@ -10,7 +10,7 @@ import { LandingPage } from "./components/landingPage/landing-page/landing-page"
 
 @Component({
   selector: 'app-root',
-  imports: [MainNav, Footer, Home, Instructors, AboutGoals, RouterOutlet],
+  imports: [MainNav, Footer,  RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

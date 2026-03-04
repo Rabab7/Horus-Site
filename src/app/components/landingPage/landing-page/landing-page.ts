@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [],
+  imports: [Home, Instructors, AboutGoals, Courses],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.css',
 })
