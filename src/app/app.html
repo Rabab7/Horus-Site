@@ -5,3 +5,14 @@
 </main>
 
 <app-footer></app-footer>
+
+<button 
+    (click)="scrollToTop()"
+    [ngClass]="{'opacity-100 visible': isVisible, 'opacity-0 invisible': !isVisible}"
+    class="fixed right-6 bottom-6 z-9999 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 
+           bg-yellow-500 hover:bg-yellow-600 text-black rounded-xl 
+           transition-all duration-500 ease-in-out transform hover:-translate-y-2 active:scale-90 group
+           shadow-[0_0_20px_rgba(234,179,8,0.3)] hover:shadow-[0_0_30px_rgba(234,179,8,0.6)]">
+    
+    <i class="fa-solid fa-angles-up text-2xl md:text-3xl animate-bounce group-hover:animate-none"></i>
+</button>
