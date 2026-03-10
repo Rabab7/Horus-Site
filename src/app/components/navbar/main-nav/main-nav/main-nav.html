@@ -118,19 +118,19 @@
                 </div>
 
                 <div class="hidden md:flex space-x-reverse space-x-8 text-zinc-900 dark:text-zinc-100 font-semibold">
-                    <a href="#" class="relative group hover:text-yellow-500 transition-colors">
+                    <a routerLink="/" fragment="home" class="relative group hover:text-yellow-500 transition-colors">
                         الرئيسية
                         <span class="absolute right-0 -bottom-1 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#" class="relative group hover:text-yellow-500 transition-colors">
+                    <a routerLink="/" fragment="courses" class="relative group hover:text-yellow-500 transition-colors">
                         الدورات
                         <span class="absolute right-0 -bottom-1 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#" class="relative group hover:text-yellow-500 transition-colors">
+                    <a routerLink="/" fragment="team" class="relative group hover:text-yellow-500 transition-colors">
                         المدربون
                         <span class="absolute right-0 -bottom-1 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#" class="relative mr-8 group hover:text-yellow-500 transition-colors">
+                    <a routerLink="/" fragment="about" class="relative mr-8 group hover:text-yellow-500 transition-colors">
                         عن الأكاديمية
                         <span class="absolute right-0 -bottom-1 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
@@ -181,10 +181,10 @@
             backdrop-blur-lg border border-zinc-200 dark:border-zinc-800 
             shadow-2xl rounded-3xl p-6 space-y-4 transition-all duration-300 text-right">
 
-            <a href="#" class="block font-medium text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">الرئيسية</a>
-            <a href="#" class="block font-medium text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">الدورات</a>
-            <a href="#" class="block font-medium text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">المدربون</a>
-            <a href="#" class="block font-medium text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">عن الأكاديمية</a>     
+            <a routerLink="/" fragment="home" (click)="toggleMenu()" class="block font-semibold text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">الرئيسية</a>
+            <a routerLink="/" fragment="courses" (click)="toggleMenu()" class="block font-semibold text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">الدورات</a>
+            <a routerLink="/" fragment="team"  (click)="toggleMenu()" class="block font-semibold text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">المدربون</a>
+            <a routerLink="/" fragment="about" (click)="toggleMenu()" class="block font-semibold text-zinc-800 dark:text-white hover:text-yellow-500 border-b border-zinc-100 dark:border-zinc-800 pb-2">عن الأكاديمية</a>     
             <!-- <a href="#" class="block font-medium text-zinc-800 dark:text-white hover:text-yellow-500 pb-2">تواصل معنا</a> -->
 
             <button class="w-full mt-4 px-4 py-3 bg-yellow-500 text-black rounded-xl font-bold shadow-lg shadow-yellow-500/20">

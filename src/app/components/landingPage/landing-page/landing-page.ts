@@ -5,11 +5,12 @@ import { Instructors } from "../../instructors/instructors/instructors";
 import { AboutGoals } from "../../about/about-goals/about-goals";
 import { CourseDetails } from "../../courses/coursesDetail/course-details/course-details";
 import { RouterOutlet } from '@angular/router';
+import { Partnership } from "../../partnership/partnership";
 
 
 @Component({
   selector: 'app-landing-page',
-  imports: [Home, Instructors, AboutGoals, Courses],
+  imports: [Home, Instructors, AboutGoals, Courses, Partnership],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.css',
 })
