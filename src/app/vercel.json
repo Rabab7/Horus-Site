@@ -1,9 +1,9 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/404.html"
+      "source": "/(.*)",
+      "destination": "/src/404.html",
+      "permanent":false
     }
   ]
 }
