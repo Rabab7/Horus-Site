@@ -5,10 +5,10 @@ import { Courses } from './components/courses/courses/courses';
 import { AllCourses } from './components/courses/allCourses/all-courses/all-courses';
 
 export const routes: Routes = [
+    { path: '**', redirectTo: '' },
     { path: '', component: LandingPage, title: 'أكاديمية حورس | الرئيسية' },
     { path: 'landing-page', component: LandingPage, title: 'أكاديمية حورس | الرئيسية' },
     {path : 'courses' , component : Courses , title : 'كورسات'} ,
     { path: 'course-details', component: CourseDetails, title: 'تفاصيل الكورس' },
-    {path: 'all-courses' , component : AllCourses , title : 'كل الكورسات' },
-    { path: '**', redirectTo: '' }
+    {path: 'all-courses' , component : AllCourses , title : 'كل الكورسات ' },
 ];
