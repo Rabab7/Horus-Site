@@ -5,7 +5,7 @@ import { Courses } from './components/courses/courses/courses';
 import { AllCourses } from './components/courses/allCourses/all-courses/all-courses';
 
 export const routes: Routes = [
-    { path: '**', redirectTo: '/404.html' },
+    { path: '**', redirectTo: 'LandingPage' },
     { path: '', component: LandingPage, title: 'أكاديمية حورس | الرئيسية' },
     { path: 'landing-page', component: LandingPage, title: 'أكاديمية حورس | الرئيسية' },
     {path : 'courses' , component : Courses , title : 'كورسات'} ,
